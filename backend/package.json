@@ -1,0 +1,27 @@
+{
+  "name": "question-aggregation-backend",
+  "version": "1.0.0",
+  "description": "Question aggregation website backend",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "nodemon .",
+    "dev": "nodemon .",
+    "start": "node ."
+  },
+  "author": "srinjoydutta03@gmail.com",
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "connect-mongodb-session": "^5.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "express-session": "^1.18.1",
+    "fastest-levenshtein": "^1.0.16",
+    "mime-db": "^1.54.0",
+    "mongoose": "^8.13.2"
+  }
+}

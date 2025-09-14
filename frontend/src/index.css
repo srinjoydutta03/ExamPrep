@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@layer utilities {
+  .animate-fadeIn {
+    animation: fadeIn 0.5s ease-out forwards;
+  }
+}
+
+a {
+  font-weight: 500;
+  color: #63B3ED;
+  text-decoration: inherit;
+  transition: color 0.2s ease;
+}
+a:hover {
+  color: #90CDF4;
+}
+
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #2D3748;
+  color: #EBF8FF;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+button:hover {
+  border-color: #90CDF4;
+  background-color: #4A5568;
+}
+button:focus,
+button:focus-visible {
+  outline: 2px solid #63B3ED;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #EBF8FF;
+    background-color: #1A202C;
+  }
+  a:hover {
+    color: #90CDF4;
+  }
+  button {
+    background-color: #2D3748;
+  }
+} 

@@ -1,0 +1,16 @@
+{
+  "name": "mutate-question",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "mutation.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@langchain/cohere": "^0.3.3",
+    "@langchain/core": "^0.3.46"
+  }
+}
