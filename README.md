@@ -25,7 +25,7 @@ A full-stack web application for crowd-sourced competitive exam questions. Pract
 - **Markdown**: React Markdown with math support
 - **Build Tool**: Vite
 
-### Backend (`/question-aggregation-backend`)
+### Backend (`/backend`)
 - **Runtime**: Node.js with Express.js
 - **Database**: MongoDB with Mongoose ODM
 - **Authentication**: Express sessions with MongoDB store
@@ -45,7 +45,7 @@ A full-stack web application for crowd-sourced competitive exam questions. Pract
 
 
 ### Backend Setup
-
+```
 cd backend
 npm install
 
@@ -53,18 +53,22 @@ npm install
 cat > .env 
 DATABASE_URI=mongodb://localhost:27017/examprep
 PORT=3500
+```
 
 ### AI Service Setup
-
+```
 cd mutate-question
 npm install
 
 # Create .env file with your Cohere API key
 cat > .env 
 COHERE_API_KEY=your-cohere-api-key
+```
 
 ### Frontend Setup
 
+```
 cd frontend
 npm install
 npm run dev
+```
